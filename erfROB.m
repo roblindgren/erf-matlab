@@ -1,11 +1,11 @@
-function [x,f] = MT5b( p1,p2,max)
-%For use on problem 5 of Num Analysis II midterm. 
-%Input: p1 and p2 are two intial guesses
+function [x,f] = erfROB( p1,p2,max,out)
+%Approximates the input x to the Gauss error function neeeded to produce given output value out
+%Input: p1 and p2 are two intial guesses, max is the maximum number of iterations, out is the given output value
 %Output: x and f are vectors, x a sequences of guesses at the %root, f a sequence of values erf(x)-k
 
 %First, we create vectors to store x and f(x) values, as well as
 %store the first two guesses, max iterations, and my value k
-x=[];f=[];x(1)=p1;x(2)=p2;TOL=0.00001;k=0.75;
+x=[];f=[];x(1)=p1;x(2)=p2;TOL=0.00001;k=out;
 d=2*sqrt(pi);
 
 %Here, we compute the first two function values with the trap rule
