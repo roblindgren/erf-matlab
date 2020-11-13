@@ -1,5 +1,5 @@
 function [x,f] = erfROB( p1,p2,max,out)
-%Approximates the input x to the Gauss error function neeeded to produce given output value out
+%Approximates the input x to the Gauss error function needed to produce given output value out
 %Input: p1 and p2 are two intial guesses, max is the maximum number of iterations, out is the given output value
 %Output: x and f are vectors, x a sequences of guesses at the %root, f a sequence of values erf(x)-k
 
